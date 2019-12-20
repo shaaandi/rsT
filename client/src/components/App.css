@@ -1,0 +1,508 @@
+@import url("https://fonts.googleapis.com/css?family=Geostar&display=swap");
+
+#disabledButton {
+  background: #9a9a9a;
+}
+
+#none {
+  display: none;
+}
+
+#flex {
+  display: flex;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+#flash {
+  position: fixed;
+  display: flex;
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  background: #a3d9d4a3;
+}
+
+#flash h3 {
+  font-size: 40px;
+}
+
+.initializeForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: center;
+}
+
+.flex-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formRadio {
+  opacity: 1;
+  position: relative;
+}
+
+/* Paging Style   */
+.paging {
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+}
+
+.paging button,
+.paging input {
+  padding: 10px;
+  background: #009688;
+  border: solid 0.3px #717070;
+}
+
+#jumpPageForm {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ****************************** */
+
+/* // Header styling  */
+
+#header {
+  display: flex;
+  background: #009688;
+  padding: 5px;
+  justify-content: space-between;
+}
+
+#header .right {
+  padding: 5px;
+  flex-basis: 20%;
+}
+
+#header .left {
+  display: flex;
+  padding: 5px;
+  flex-basis: 20%;
+  justify-content: flex-end;
+}
+
+#header a {
+  color: white;
+  text-decoration: none;
+}
+
+#header .link {
+  margin: 7px;
+}
+
+#header .center {
+  display: flex;
+  padding: 5px;
+  flex-grow: 1;
+  flex-basis: 60%;
+}
+
+.brandLogo {
+  font-family: "Geostar", cursive;
+}
+
+#brandImg {
+  width: 100px;
+}
+
+.headerForm {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  margin: 0 10px;
+  padding: 1px;
+  justify-content: center;
+}
+
+#search-dropDown {
+  background: whitesmoke;
+}
+
+/* **************************** */
+
+/* Retailer Dashboard styling .   */
+
+.retailerProducts {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product {
+  display: flex;
+  flex-direction: column;
+  margin: 7px;
+  flex-basis: 23%;
+  align-items: center;
+  border: solid 0.5px;
+}
+
+.product img {
+  width: 100%;
+  max-height: 300px;
+}
+
+/* Retailer Dashboard styling  */
+.retailerMain {
+  display: flex;
+  flex-grow: 1;
+}
+
+.retailerContent {
+  flex-basis: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.sideBar {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  flex-grow: 1;
+  background: #41c9b9;
+  align-items: center;
+}
+
+.sideBar img {
+  width: 180px;
+  border-radius: 50%;
+  border: solid white 0.5px;
+}
+
+.sideBar .link {
+  padding: 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: rgb(58, 57, 57);
+  width: 100%;
+  font-weight: bold;
+}
+
+.sideBar .link:hover {
+  background: #009688c9;
+}
+/* ************************** */
+
+/* service Styling   */
+.serviceNav {
+  display: flex;
+  justify-content: space-around;
+  /* padding: 5px; */
+  background: #0096886b;
+}
+
+.serviceNav button {
+  background: transparent;
+  border: none;
+  font-size: medium;
+  font-weight: bold;
+  padding: 5px;
+}
+
+.serviceNav .checked {
+  background: white;
+}
+
+/* ******************************* */
+
+/* Product Styling   */
+
+.mainProduct {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.productHeader {
+  display: flex;
+}
+
+.productHeader img {
+  width: 300px;
+}
+
+.productIntro {
+  padding: 15px;
+}
+
+/* ************************** */
+
+.mainProducts {
+  display: flex;
+  padding: 15px;
+  flex-wrap: wrap;
+}
+
+.mainProducts .product {
+  flex-basis: 15%;
+}
+
+/* Cart stylien   */
+.cart {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.cartHeader {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cartProduct {
+  display: flex;
+  padding: 4px;
+  margin: 3px;
+  justify-content: space-between;
+  border: solid 0.4px;
+  border-color: #009688;
+}
+
+.cartImage {
+  width: 80px;
+  border-radius: 50px;
+}
+
+.cartProductInformation {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.cartProductRemove {
+  background: #ff1212bf;
+  border: none;
+  color: white;
+}
+
+.cartProductDecrement {
+  color: black;
+  background: rgb(185, 211, 121);
+  border: none;
+  cursor: pointer;
+}
+
+.cartProductIncrement {
+  color: black;
+  background: rgb(121, 211, 127);
+  border: none;
+  cursor: pointer;
+}
+
+.cartText {
+  font-size: 15px;
+  font-weight: lighter;
+  flex-basis: 20%;
+}
+
+.cartButton {
+  font-size: 15px;
+  font-weight: lighter;
+  flex-basis: 3%;
+}
+
+.cartBuyProduct {
+  display: flex;
+  justify-content: flex-end;
+  padding: 4px;
+}
+
+.cartBuyButton {
+  font-size: 18px;
+  border: none;
+  background: #f1e346;
+  padding: 10px;
+  border-radius: 50px;
+}
+/* ********************/
+
+/* Orders List styling    */
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  flex-grow: 1;
+}
+
+.orders h2 {
+  text-align: center;
+}
+
+.orders .order {
+  display: flex;
+  align-items: center;
+  margin: 5px;
+  padding: 6px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  font-size: 13px;
+  border: solid 0.5px #009688;
+}
+.orders .order:hover {
+  background: whitesmoke;
+}
+
+.orders .order h3 {
+  flex-basis: 30%;
+  font-weight: lighter;
+  margin: 1px;
+}
+
+.orders .order span {
+  font-weight: bold;
+}
+
+/* ********************************* */
+
+/* Order Styling   */
+
+#order {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#order .header h3 {
+  font-size: 15px;
+  font-weight: lighter;
+}
+
+#order .header h3 span {
+  font-weight: bold;
+}
+
+#order .headings {
+  font-size: 21px;
+}
+
+#serviceChooseForm {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px;
+}
+
+#serviceChooseForm span {
+  font-weight: lighter;
+}
+
+#serviceChooseForm select {
+  padding: 5px;
+  border: none;
+  border-bottom: solid 0.5px #009688;
+  margin: 5px;
+}
+
+#serviceChooseForm select:focus {
+  border: none;
+}
+
+/* ********************************* */
+
+/* searched products  */
+
+/* **************************** */
+
+/* shopping Product styling   */
+.shopProduct {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.shopProductImage img {
+  max-width: 400px;
+}
+
+.shopProductData {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  flex-basis: 40%;
+}
+
+.shopProductData .About {
+  display: flex;
+  flex-direction: column;
+}
+
+.shopProductData .About span {
+  display: block;
+}
+
+.shopProductData .About .title {
+  display: block;
+  font-weight: normal;
+}
+
+.shopProductData .About .from {
+  font-weight: bolder;
+  font-family: monospace;
+  color: #9c27b0;
+}
+
+.shopProductOptions {
+  padding: 3px;
+}
+
+.shopProductCartForm {
+  display: flex;
+  padding: 3px;
+}
+.shopProduct .setters {
+  display: flex;
+}
+
+.similarProducts {
+  padding: 10px;
+  border-bottom: solid 0.6px;
+}
+
+.similarProducts .products {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.similarProducts .products .similarProduct {
+  flex-basis: 23%;
+  padding: 5px;
+}
+
+.similarProducts .products .similarProduct h3,
+h4 {
+  font-weight: normal;
+}
+
+.similarProduct img {
+  max-width: 200px;
+}
+/* ************************************ */
+
+@media only screen and (max-width: 900px) {
+  #productNotFound {
+    padding: 10px;
+  }
+
+  #productNotFound h3 {
+    font-size: x-large;
+  }
+}

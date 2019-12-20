@@ -1,0 +1,129 @@
+#customerMobileDashboardNav {
+  display: none;
+}
+
+#customerWishList {
+  display: flex;
+  flex-direction: column;
+}
+
+#customerWishList-header {
+  font-size: x-large;
+  font-weight: normal;
+  text-align: center;
+}
+
+#customerWishList-products {
+  display: flex;
+  flex-wrap: wrap;
+  /* justify-content: center; */
+}
+
+.customerWishList-products-product {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 10px;
+  flex-basis: 20%;
+  margin: 5px;
+  border: solid 1px #009688;
+}
+
+.customerWishList-products-product img {
+  width: 200px;
+  max-height: 200px;
+}
+
+.wishListProductDetails {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 4px;
+}
+
+.wishListProductDetails h3 {
+  font-size: medium;
+  font-weight: normal;
+  margin: 2px;
+}
+
+.retailerProfile {
+  padding: 10px;
+}
+
+.retailerProfile li {
+  display: block;
+}
+
+@media only screen and (max-width: 900px) {
+  #customerMobileDashboardNav {
+    background: #009688;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 10%;
+    /* position: sticky; */
+  }
+
+  #customerMobileDashboardNav .link {
+    padding: 20px 3px;
+    text-align: center;
+  }
+
+  .cartProduct {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cartProduct img {
+    width: 200px;
+  }
+
+  .cartProduct .cartText {
+    flex-basis: 100%;
+    margin: 0;
+    padding: 3px;
+  }
+
+  .cartProduct .cartButton {
+    padding: 3px;
+    flex-basis: 50%;
+  }
+
+  .cartProduct .cartProductRemove {
+    flex-basis: 100%;
+  }
+
+  /* wish list styling   */
+
+  #customerWishListProducts-header {
+    text-align: center;
+    flex-basis: 100%;
+    font-weight: bold;
+  }
+
+  #customerWishList-products {
+    flex-wrap: wrap;
+  }
+  .customerWishList-products-product {
+    flex-basis: 100%;
+  }
+
+  .customerWishListProducts-product img {
+    width: 200px;
+  }
+
+  .customerWishListProducts-product .productInformtation {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .customerWishListProducts-product h3,
+  .customerWishListProducts-product h4 {
+    margin: 0;
+    padding: 3px;
+    font-size: 18px;
+    font-weight: lighter;
+  }
+  /* ************************ */
+}

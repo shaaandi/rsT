@@ -1,0 +1,61 @@
+.shopProductButton {
+  background: transparent;
+  display: flex;
+  align-items: center;
+  border: solid 0.1px #1233;
+}
+
+.shopProductButton:hover {
+  cursor: pointer;
+}
+
+.shopProductButton-icon i {
+  font-size: x-large;
+  color: #f90;
+}
+
+.shopProductCartButton {
+  padding: 5px;
+}
+
+.shopProductButton-icon img {
+  width: 60px;
+}
+
+.crements {
+  background: none;
+  border: none;
+}
+
+@media only screen and (max-width: 900px) {
+  .shopProduct {
+    flex-direction: column;
+    border-bottom: solid 0.3px grey;
+  }
+
+  .similarProducts .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .shopProductImage img {
+    max-width: 250px;
+  }
+
+  .similarProducts .similarProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: 23%;
+    padding: 8px;
+    margin: 5px;
+    border-bottom: 0.1px solid #009688;
+  }
+
+  .similarProductInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

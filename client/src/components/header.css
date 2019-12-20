@@ -1,0 +1,152 @@
+#mainNavBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 5px;
+  background: #41c9b9;
+  align-items: center;
+}
+
+#toggler-toggleOptions {
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+  #mainNavBar {
+    flex-wrap: wrap;
+  }
+  .mainNavBar-Brand {
+    order: -1;
+  }
+
+  #mainNavBar-BrandLogo-mobile {
+    width: 130px;
+  }
+
+  #toggler-toggleOptions {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+    border: none;
+    font-size: 18px;
+    transition: transform 0.6s;
+  }
+
+  #toggler-toggleOptions:focus {
+    outline: none;
+  }
+
+  #mobile-none {
+    display: none;
+  }
+
+  #mobile-show {
+    display: flex;
+  }
+
+  .toggleOptions {
+    display: flex;
+    order: 0;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+  }
+  .mainNavBar-DekstopSearchForm {
+    order: 1;
+    flex-basis: 100%;
+  }
+  /* form styling  */
+  #search-dropDown {
+    display: none;
+  }
+  .headerForm-mobile {
+    margin: 0;
+  }
+}
+
+.mainNavBar-Brand {
+  flex-basis: 15%;
+}
+
+.mainNavBar-BrandLogo {
+  width: 170px;
+  margin: 0 10px 0 0;
+  flex-basis: 15%;
+}
+
+a {
+  color: #140c23;
+  font-weight: lighter;
+}
+
+.mainNavBar-DekstopSearchForm {
+  display: flex;
+  flex-grow: 1;
+  padding: 4px;
+}
+
+#search-dropDown {
+  border: none;
+}
+
+#search-dropDown:focus {
+  outline: none;
+}
+
+#query {
+  border: none;
+  font-size: medium;
+  flex-grow: 1;
+}
+
+#query:focus {
+  outline: none;
+}
+
+#searchIcon {
+  font-size: 1.4rem;
+  padding: 3px;
+  background: white;
+  border: none;
+}
+
+.toggleOptions {
+  display: flex;
+  align-items: center;
+}
+
+.toggleOptions-buttons {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 0 5px;
+  margin: 0 8px;
+  cursor: pointer;
+}
+
+.toggleOptions-dropDownWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggleOptions-dropDownButton {
+  border: none;
+  background: transparent;
+  font-size: 18px;
+  padding: 0 5px;
+  margin: 0 8px;
+  cursor: pointer;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.toggleOptions-dropDownContent {
+  display: flex;
+}
+
+.toggleOptions-dropDownOption {
+  background: transparent;
+  border: none;
+  font-size: 15px;
+  padding: 0 5px;
+  margin: 0 8px;
+  cursor: pointer;
+}
